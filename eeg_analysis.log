@@ -1,0 +1,1882 @@
+2025-05-08 17:53:11,656 - EEG_Analysis - WARNING - 数据根目录不存在: ./data
+2025-05-08 17:53:11,657 - EEG_Analysis - WARNING - 游戏成瘾组目录不存在: ./data\A
+2025-05-08 17:53:11,657 - EEG_Analysis - WARNING - 对照组目录不存在: ./data\C
+2025-05-08 17:56:55,583 - EEG_Analysis - WARNING - 数据根目录不存在: ./data
+2025-05-08 17:56:55,583 - EEG_Analysis - WARNING - 游戏成瘾组目录不存在: ./data\A
+2025-05-08 17:56:55,583 - EEG_Analysis - WARNING - 对照组目录不存在: ./data\C
+2025-05-08 17:56:56,119 - pytensor.configdefaults - WARNING - g++ not available, if using conda: `conda install gxx`
+2025-05-08 17:56:56,119 - pytensor.configdefaults - WARNING - g++ not detected!  PyTensor will be unable to compile C-implementations and will default to Python. Performance may be severely degraded. To remove this warning, set PyTensor flags cxx to an empty string.
+2025-05-08 17:56:56,463 - arviz.preview - INFO - arviz_base not installed
+2025-05-08 17:56:56,463 - arviz.preview - INFO - arviz_stats not installed
+2025-05-08 17:56:56,464 - arviz.preview - INFO - arviz_plots not installed
+2025-05-08 18:08:12,932 - EEG_Analysis - INFO - 已设置随机种子: 42
+2025-05-08 18:08:12,933 - EEG_Analysis - INFO - 开始EEG数据分析...
+2025-05-08 18:08:12,933 - EEG_Analysis - INFO - 第1步：加载数据...
+2025-05-08 18:08:12,933 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\load_all_data.pkl
+2025-05-08 18:08:12,933 - EEG_Analysis - INFO - 开始执行load_all_data阶段...
+2025-05-08 18:08:12,934 - EEG_Analysis - INFO - 开始加载所有EEG数据...
+2025-05-08 18:08:12,934 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\load_data_A.pkl
+2025-05-08 18:08:12,934 - EEG_Analysis - INFO - 开始执行load_data阶段...
+2025-05-08 18:08:12,934 - EEG_Analysis - ERROR - 程序执行过程中出错: load_group_data() got an unexpected keyword argument 'group'
+2025-05-08 18:08:12,935 - EEG_Analysis - ERROR - Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\单脑处理\main.py", line 108, in main
+    all_data = data_loader.load_all_data(force=args.force)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\单脑处理\utils.py", line 95, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\单脑处理\data_loader.py", line 123, in load_all_data
+    addiction_data = load_group_data(addiction_dir, 'A', group='A')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\PycharmProjects\单脑处理\utils.py", line 95, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: load_group_data() got an unexpected keyword argument 'group'
+
+2025-05-08 18:08:12,935 - EEG_Analysis - INFO - 函数 main 执行耗时: 0.00秒
+2025-05-08 18:10:31,543 - EEG_Analysis - INFO - 已设置随机种子: 42
+2025-05-08 18:10:31,544 - EEG_Analysis - INFO - 开始EEG数据分析...
+2025-05-08 18:10:31,544 - EEG_Analysis - INFO - 第1步：加载数据...
+2025-05-08 18:10:31,544 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\load_all_data.pkl
+2025-05-08 18:10:31,544 - EEG_Analysis - INFO - 开始执行load_all_data阶段...
+2025-05-08 18:10:31,544 - EEG_Analysis - INFO - 开始加载所有EEG数据...
+2025-05-08 18:10:31,544 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\load_data_A.pkl
+2025-05-08 18:10:31,544 - EEG_Analysis - INFO - 开始执行load_data阶段...
+2025-05-08 18:10:31,545 - EEG_Analysis - INFO - 在 ./data\A 中找到 212 个.mat文件
+2025-05-08 18:10:31,581 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_1_eegdata_20241111_192855.mat, 数据形状: (32, 72576)
+2025-05-08 18:10:31,617 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_2_eegdata_20241111_193310.mat, 数据形状: (32, 75264)
+2025-05-08 18:10:31,650 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_2_eegdata_20241111_195537.mat, 数据形状: (32, 72512)
+2025-05-08 18:10:31,732 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_3_eegdata_20241111_194134.mat, 数据形状: (32, 173584)
+2025-05-08 18:10:31,813 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_3_eegdata_20241111_195928.mat, 数据形状: (32, 173040)
+2025-05-08 18:10:31,895 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_4_eegdata_20241111_194550.mat, 数据形状: (32, 171824)
+2025-05-08 18:10:31,979 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_4_eegdata_20241111_200335.mat, 数据形状: (32, 170112)
+2025-05-08 18:10:32,059 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_5_eegdata_20241111_195213.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:32,139 - EEG_Analysis - INFO - 已加载文件: ./data\A\刘乐平_5_eegdata_20241111_200657.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:32,213 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_1_eegdata_20250326_152259.mat, 数据形状: (32, 156544)
+2025-05-08 18:10:32,291 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_2_eegdata_20250326_152714.mat, 数据形状: (32, 157120)
+2025-05-08 18:10:32,368 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_2_eegdata_20250326_154817.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:32,451 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_3_eegdata_20250326_153055.mat, 数据形状: (32, 173888)
+2025-05-08 18:10:32,536 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_3_eegdata_20250326_155226.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:32,619 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_4_eegdata_20250326_153556.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:32,700 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_4_eegdata_20250326_155634.mat, 数据形状: (32, 173184)
+2025-05-08 18:10:32,784 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_5_eegdata_20250326_154011.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:32,867 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_5_eegdata_20250326_160017.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:32,949 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_6_eegdata_20250326_154411.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:33,039 - EEG_Analysis - INFO - 已加载文件: ./data\A\孟淑渝_6_eegdata_20250326_160417.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:33,110 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_1_eegdata_20241127_152200.mat, 数据形状: (32, 149888)
+2025-05-08 18:10:33,180 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_2_eegdata_20241127_152750.mat, 数据形状: (32, 151232)
+2025-05-08 18:10:33,249 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_2_eegdata_20241127_154706.mat, 数据形状: (32, 150592)
+2025-05-08 18:10:33,334 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_3_eegdata_20241127_153325.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:33,415 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_3_eegdata_20241127_155308.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:33,505 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_4_eegdata_20241127_153752.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:33,587 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_4_eegdata_20241127_155732.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:33,669 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_5_eegdata_20241127_154250.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:33,751 - EEG_Analysis - INFO - 已加载文件: ./data\A\张树熠_5_eegdata_20241127_160204.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:33,822 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_1_eegdata_20241126_145705.mat, 数据形状: (32, 150272)
+2025-05-08 18:10:33,892 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_2_eegdata_20241126_150231.mat, 数据形状: (32, 150912)
+2025-05-08 18:10:33,962 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_2_eegdata_20241126_152335.mat, 数据形状: (32, 150720)
+2025-05-08 18:10:34,044 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_3_eegdata_20241126_151038.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:34,139 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_3_eegdata_20241126_152728.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:34,224 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_4_eegdata_20241126_151504.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:34,306 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_4_eegdata_20241126_153320.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:34,387 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_5_eegdata_20241126_151908.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:34,471 - EEG_Analysis - INFO - 已加载文件: ./data\A\张汉霖_5_eegdata_20241126_153737.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:34,540 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_1_eegdata_20241220_151328.mat, 数据形状: (32, 150272)
+2025-05-08 18:10:34,610 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_2_eegdata_20241220_151711.mat, 数据形状: (32, 151040)
+2025-05-08 18:10:34,680 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_2_eegdata_20241220_154128.mat, 数据形状: (32, 150528)
+2025-05-08 18:10:34,764 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_3_eegdata_20241220_152056.mat, 数据形状: (32, 173888)
+2025-05-08 18:10:34,847 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_3_eegdata_20241220_154501.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:34,929 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_4_eegdata_20241220_152554.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:35,011 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_4_eegdata_20241220_155042.mat, 数据形状: (32, 173184)
+2025-05-08 18:10:35,096 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_5_eegdata_20241220_153115.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:35,177 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_5_eegdata_20241220_155429.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:35,268 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_6_eegdata_20241220_153648.mat, 数据形状: (32, 173184)
+2025-05-08 18:10:35,354 - EEG_Analysis - INFO - 已加载文件: ./data\A\彭煊衍_6_eegdata_20241220_155839.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:35,428 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_1_eegdata_20241214_193458.mat, 数据形状: (32, 150336)
+2025-05-08 18:10:35,501 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_2_eegdata_20241214_194313.mat, 数据形状: (32, 151040)
+2025-05-08 18:10:35,572 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_2_eegdata_20241214_200742.mat, 数据形状: (32, 150528)
+2025-05-08 18:10:35,653 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_3_eegdata_20241214_194652.mat, 数据形状: (32, 173888)
+2025-05-08 18:10:35,736 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_3_eegdata_20241214_201138.mat, 数据形状: (32, 173568)
+2025-05-08 18:10:35,817 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_4_eegdata_20241214_195314.mat, 数据形状: (32, 173184)
+2025-05-08 18:10:35,898 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_4_eegdata_20241214_201653.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:35,980 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_5_eegdata_20241214_195748.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:36,060 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_5_eegdata_20241214_202158.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:36,142 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_6_eegdata_20241214_200202.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:36,223 - EEG_Analysis - INFO - 已加载文件: ./data\A\朱佳珍_6_eegdata_20241214_202603.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:36,257 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_1_eegdata_20241112_191833.mat, 数据形状: (32, 73024)
+2025-05-08 18:10:36,292 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_2_eegdata_20241112_192056.mat, 数据形状: (32, 75200)
+2025-05-08 18:10:36,326 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_2_eegdata_20241112_193907.mat, 数据形状: (32, 72832)
+2025-05-08 18:10:36,419 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_3_eegdata_20241112_192500.mat, 数据形状: (32, 171264)
+2025-05-08 18:10:36,500 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_3_eegdata_20241112_194300.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:36,579 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_4_eegdata_20241112_192914.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:36,659 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_4_eegdata_20241112_194810.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:36,735 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_5_eegdata_20241112_193305.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:36,814 - EEG_Analysis - INFO - 已加载文件: ./data\A\李彤彤_5_eegdata_20241112_195217.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:36,887 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_1_eegdata_20250326_095914.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:36,960 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_2_eegdata_20250326_100342.mat, 数据形状: (32, 156800)
+2025-05-08 18:10:37,041 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_2_eegdata_20250326_102358.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:37,126 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_3_eegdata_20250326_100725.mat, 数据形状: (32, 173952)
+2025-05-08 18:10:37,210 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_3_eegdata_20250326_102719.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:37,293 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_4_eegdata_20250326_101153.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:37,376 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_4_eegdata_20250326_103116.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:37,462 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_5_eegdata_20250326_101607.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:37,553 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_5_eegdata_20250326_103457.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:37,639 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_6_eegdata_20250326_101959.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:37,725 - EEG_Analysis - INFO - 已加载文件: ./data\A\李越_6_eegdata_20250326_103854.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:37,798 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_1_eegdata_20250102_145058.mat, 数据形状: (32, 156096)
+2025-05-08 18:10:37,872 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_2_eegdata_20250102_145437.mat, 数据形状: (32, 156800)
+2025-05-08 18:10:37,946 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_2_eegdata_20250102_151519.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:38,030 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_3_eegdata_20250102_145803.mat, 数据形状: (32, 173440)
+2025-05-08 18:10:38,113 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_3_eegdata_20250102_151839.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:38,199 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_4_eegdata_20250102_150218.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:38,284 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_4_eegdata_20250102_152256.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:38,368 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_5_eegdata_20250102_150618.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:38,452 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_5_eegdata_20250102_152811.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:38,534 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_6_eegdata_20250102_151031.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:38,620 - EEG_Analysis - INFO - 已加载文件: ./data\A\杨林涛_6_eegdata_20250102_153141.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:38,696 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_1_eegdata_20250328_095603.mat, 数据形状: (32, 156736)
+2025-05-08 18:10:38,771 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_2_eegdata_20250328_100047.mat, 数据形状: (32, 157120)
+2025-05-08 18:10:38,843 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_2_eegdata_20250328_102236.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:38,927 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_3_eegdata_20250328_100445.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:39,010 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_3_eegdata_20250328_102602.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:39,094 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_4_eegdata_20250328_100938.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:39,176 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_4_eegdata_20250328_103039.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:39,260 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_5_eegdata_20250328_101333.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:39,344 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_5_eegdata_20250328_103410.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:39,431 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_6_eegdata_20250328_101815.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:39,519 - EEG_Analysis - INFO - 已加载文件: ./data\A\林舒彤_6_eegdata_20250328_103812.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:39,590 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_1_eegdata_20241219_150614.mat, 数据形状: (32, 149888)
+2025-05-08 18:10:39,661 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_2_eegdata_20241219_151017.mat, 数据形状: (32, 150976)
+2025-05-08 18:10:39,743 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_2_eegdata_20241219_153308.mat, 数据形状: (32, 150208)
+2025-05-08 18:10:39,829 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_3_eegdata_20241219_151425.mat, 数据形状: (32, 173760)
+2025-05-08 18:10:39,914 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_3_eegdata_20241219_153707.mat, 数据形状: (32, 173568)
+2025-05-08 18:10:39,997 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_4_eegdata_20241219_151915.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:40,078 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_4_eegdata_20241219_154116.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:40,161 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_5_eegdata_20241219_152434.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:40,242 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_5_eegdata_20241219_154528.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:40,326 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_6_eegdata_20241219_152843.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:40,413 - EEG_Analysis - INFO - 已加载文件: ./data\A\梁皓翔_6_eegdata_20241219_154942.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:40,483 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_1_eegdata_20241119_160217.mat, 数据形状: (32, 144192)
+2025-05-08 18:10:40,553 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_2_eegdata_20241119_160634.mat, 数据形状: (32, 144704)
+2025-05-08 18:10:40,627 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_2_eegdata_20241119_162320.mat, 数据形状: (32, 150592)
+2025-05-08 18:10:40,709 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_3_eegdata_20241119_161048.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:40,792 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_3_eegdata_20241119_162707.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:40,880 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_4_eegdata_20241119_161453.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:40,967 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_4_eegdata_20241119_163113.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:41,051 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_5_eegdata_20241119_161849.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:41,135 - EEG_Analysis - INFO - 已加载文件: ./data\A\沈斯诺_5_eegdata_20241119_163534.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:41,213 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_1_eegdata_20250327_155108.mat, 数据形状: (32, 155968)
+2025-05-08 18:10:41,292 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_2_eegdata_20250327_155518.mat, 数据形状: (32, 157056)
+2025-05-08 18:10:41,370 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_2_eegdata_20250327_161456.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:41,456 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_3_eegdata_20250327_155847.mat, 数据形状: (32, 173888)
+2025-05-08 18:10:41,541 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_3_eegdata_20250327_161849.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:41,623 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_4_eegdata_20250327_160325.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:41,704 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_4_eegdata_20250327_162323.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:41,784 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_5_eegdata_20250327_160717.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:41,864 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_5_eegdata_20250327_162715.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:41,945 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_6_eegdata_20250327_161054.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:42,033 - EEG_Analysis - INFO - 已加载文件: ./data\A\潘国强_6_eegdata_20250327_163111.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:42,099 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_1_eegdata_20241119_145010.mat, 数据形状: (32, 144000)
+2025-05-08 18:10:42,167 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_2_eegdata_20241119_145431.mat, 数据形状: (32, 145216)
+2025-05-08 18:10:42,235 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_2_eegdata_20241119_151209.mat, 数据形状: (32, 144512)
+2025-05-08 18:10:42,316 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_3_eegdata_20241119_145950.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:42,398 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_3_eegdata_20241119_151623.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:42,479 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_4_eegdata_20241119_150345.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:42,559 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_4_eegdata_20241119_152011.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:42,638 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_5_eegdata_20241119_150754.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:42,718 - EEG_Analysis - INFO - 已加载文件: ./data\A\焦向谆_5_eegdata_20241119_152434.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:42,790 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_1_eegdata_20250326_192021.mat, 数据形状: (32, 156544)
+2025-05-08 18:10:42,863 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_2_eegdata_20250326_192405.mat, 数据形状: (32, 157120)
+2025-05-08 18:10:42,937 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_2_eegdata_20250326_194358.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:43,016 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_3_eegdata_20250326_192730.mat, 数据形状: (32, 173952)
+2025-05-08 18:10:43,099 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_3_eegdata_20250326_194720.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:43,183 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_4_eegdata_20250326_193204.mat, 数据形状: (32, 172992)
+2025-05-08 18:10:43,264 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_4_eegdata_20250326_195140.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:43,346 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_5_eegdata_20250326_193611.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:43,427 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_5_eegdata_20250326_195540.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:43,508 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_6_eegdata_20250326_193955.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:43,588 - EEG_Analysis - INFO - 已加载文件: ./data\A\王皓民_6_eegdata_20250326_195939.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:43,661 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_1_eegdata_20250328_152951.mat, 数据形状: (32, 156480)
+2025-05-08 18:10:43,734 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_2_eegdata_20250328_153338.mat, 数据形状: (32, 157120)
+2025-05-08 18:10:43,806 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_2_eegdata_20250328_155817.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:43,887 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_3_eegdata_20250328_153849.mat, 数据形状: (32, 173888)
+2025-05-08 18:10:43,969 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_3_eegdata_20250328_160201.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:44,049 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_4_eegdata_20250328_154519.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:44,131 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_4_eegdata_20250328_160627.mat, 数据形状: (32, 172992)
+2025-05-08 18:10:44,221 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_5_eegdata_20250328_154919.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:44,305 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_5_eegdata_20250328_161036.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:44,390 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_6_eegdata_20250328_155304.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:44,472 - EEG_Analysis - INFO - 已加载文件: ./data\A\田培根_6_eegdata_20250328_161404.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:44,540 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_1_eegdata_20241114_191934.mat, 数据形状: (32, 143936)
+2025-05-08 18:10:44,608 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_2_eegdata_20241114_192400.mat, 数据形状: (32, 146176)
+2025-05-08 18:10:44,677 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_2_eegdata_20241114_194158.mat, 数据形状: (32, 144576)
+2025-05-08 18:10:44,756 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_3_eegdata_20241114_192827.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:44,836 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_3_eegdata_20241114_194650.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:44,913 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_4_eegdata_20241114_193233.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:44,996 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_4_eegdata_20241114_195125.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:45,075 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_5_eegdata_20241114_193734.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:45,154 - EEG_Analysis - INFO - 已加载文件: ./data\A\祝名昌_5_eegdata_20241114_195528.mat, 数据形状: (32, 170176)
+2025-05-08 18:10:45,229 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_1_eegdata_20241225_145020.mat, 数据形状: (32, 156480)
+2025-05-08 18:10:45,304 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_2_eegdata_20241225_145449.mat, 数据形状: (32, 157120)
+2025-05-08 18:10:45,380 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_2_eegdata_20241225_151819.mat, 数据形状: (32, 156544)
+2025-05-08 18:10:45,460 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_3_eegdata_20241225_145846.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:45,542 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_3_eegdata_20241225_152232.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:45,625 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_4_eegdata_20241225_150400.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:45,705 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_4_eegdata_20241225_152703.mat, 数据形状: (32, 173184)
+2025-05-08 18:10:45,787 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_5_eegdata_20241225_150838.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:45,867 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_5_eegdata_20241225_153111.mat, 数据形状: (32, 173184)
+2025-05-08 18:10:45,947 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_6_eegdata_20241225_151323.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:46,030 - EEG_Analysis - INFO - 已加载文件: ./data\A\罗紫渝_6_eegdata_20241225_153538.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:46,065 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_1_eegdata_20241113_100548.mat, 数据形状: (32, 72768)
+2025-05-08 18:10:46,101 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_1_eegdata_20241113_100718.mat, 数据形状: (32, 72128)
+2025-05-08 18:10:46,136 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_2_eegdata_20241113_100943.mat, 数据形状: (32, 75264)
+2025-05-08 18:10:46,171 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_2_eegdata_20241113_102802.mat, 数据形状: (32, 72960)
+2025-05-08 18:10:46,250 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_3_eegdata_20241113_101351.mat, 数据形状: (32, 171328)
+2025-05-08 18:10:46,328 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_3_eegdata_20241113_103138.mat, 数据形状: (32, 171200)
+2025-05-08 18:10:46,407 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_4_eegdata_20241113_101906.mat, 数据形状: (32, 171200)
+2025-05-08 18:10:46,493 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_4_eegdata_20241113_103617.mat, 数据形状: (32, 171136)
+2025-05-08 18:10:46,572 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_5_eegdata_20241113_102335.mat, 数据形状: (32, 171392)
+2025-05-08 18:10:46,650 - EEG_Analysis - INFO - 已加载文件: ./data\A\蔡铄涛_5_eegdata_20241113_104241.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:46,720 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_1_eegdata_20241128_152446.mat, 数据形状: (32, 149952)
+2025-05-08 18:10:46,790 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_2_eegdata_20241128_152905.mat, 数据形状: (32, 150848)
+2025-05-08 18:10:46,859 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_2_eegdata_20241128_154649.mat, 数据形状: (32, 150528)
+2025-05-08 18:10:46,939 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_3_eegdata_20241128_153348.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:47,020 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_3_eegdata_20241128_155132.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:47,101 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_4_eegdata_20241128_153817.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:47,182 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_4_eegdata_20241128_155528.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:47,267 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_5_eegdata_20241128_154243.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:47,350 - EEG_Analysis - INFO - 已加载文件: ./data\A\高行之_5_eegdata_20241128_155924.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:47,386 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_1_eegdata_20241113_145410.mat, 数据形状: (32, 72192)
+2025-05-08 18:10:47,422 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_2_eegdata_20241113_145605.mat, 数据形状: (32, 74112)
+2025-05-08 18:10:47,458 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_2_eegdata_20241113_151714.mat, 数据形状: (32, 72448)
+2025-05-08 18:10:47,543 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_3_eegdata_20241113_150312.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:47,627 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_3_eegdata_20241113_152125.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:47,705 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_4_eegdata_20241113_150738.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:47,783 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_4_eegdata_20241113_152556.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:47,863 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_5_eegdata_20241113_151227.mat, 数据形状: (32, 170112)
+2025-05-08 18:10:47,941 - EEG_Analysis - INFO - 已加载文件: ./data\A\鲁佳敏_5_eegdata_20241113_153010.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:47,941 - EEG_Analysis - INFO - 成功加载A组212个受试者的数据
+2025-05-08 18:10:47,941 - EEG_Analysis - INFO - load_data阶段完成，耗时: 16.40秒
+2025-05-08 18:10:51,480 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\load_data_A.pkl
+2025-05-08 18:10:51,480 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\load_data_C.pkl
+2025-05-08 18:10:51,480 - EEG_Analysis - INFO - 开始执行load_data阶段...
+2025-05-08 18:10:51,482 - EEG_Analysis - INFO - 在 ./data\C 中找到 265 个.mat文件
+2025-05-08 18:10:51,570 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_1_eegdata_20241129_145409.mat, 数据形状: (32, 150336)
+2025-05-08 18:10:51,658 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_2_eegdata_20241129_145828.mat, 数据形状: (32, 150976)
+2025-05-08 18:10:51,732 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_2_eegdata_20241129_152310.mat, 数据形状: (32, 150272)
+2025-05-08 18:10:51,813 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_3_eegdata_20241129_150231.mat, 数据形状: (32, 173824)
+2025-05-08 18:10:51,894 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_3_eegdata_20241129_152720.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:51,977 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_4_eegdata_20241129_150840.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:52,061 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_4_eegdata_20241129_153139.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:52,143 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_5_eegdata_20241129_151316.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:52,224 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_5_eegdata_20241129_153552.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:52,304 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_6_eegdata_20241129_151819.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:52,385 - EEG_Analysis - INFO - 已加载文件: ./data\C\何浩霖_6_eegdata_20241129_153955.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:52,455 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_1_eegdata_20241115_150027.mat, 数据形状: (32, 144768)
+2025-05-08 18:10:52,526 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_2_eegdata_20241115_150448.mat, 数据形状: (32, 147328)
+2025-05-08 18:10:52,593 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_2_eegdata_20241115_152307.mat, 数据形状: (32, 145024)
+2025-05-08 18:10:52,671 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_3_eegdata_20241115_150905.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:52,752 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_3_eegdata_20241115_152806.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:52,831 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_4_eegdata_20241115_151306.mat, 数据形状: (32, 170240)
+2025-05-08 18:10:52,912 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_4_eegdata_20241115_153259.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:52,990 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_5_eegdata_20241115_151730.mat, 数据形状: (32, 170304)
+2025-05-08 18:10:53,071 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘彬杰_5_eegdata_20241115_153707.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:53,148 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_1_eegdata_20250327_094306.mat, 数据形状: (32, 156352)
+2025-05-08 18:10:53,226 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_2_eegdata_20250327_094653.mat, 数据形状: (32, 156928)
+2025-05-08 18:10:53,299 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_2_eegdata_20250327_100715.mat, 数据形状: (32, 156288)
+2025-05-08 18:10:53,384 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_3_eegdata_20250327_095052.mat, 数据形状: (32, 173568)
+2025-05-08 18:10:53,467 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_3_eegdata_20250327_101056.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:53,549 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_4_eegdata_20250327_095514.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:53,631 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_4_eegdata_20250327_101518.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:53,710 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_5_eegdata_20250327_095911.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:53,790 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_5_eegdata_20250327_101935.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:53,869 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_6_eegdata_20250327_100258.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:53,949 - EEG_Analysis - INFO - 已加载文件: ./data\C\刘思洁_6_eegdata_20250327_102316.mat, 数据形状: (32, 173056)
+2025-05-08 18:10:54,021 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_1_eegdata_20250103_152322.mat, 数据形状: (32, 156032)
+2025-05-08 18:10:54,095 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_2_eegdata_20250103_152730.mat, 数据形状: (32, 156864)
+2025-05-08 18:10:54,167 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_2_eegdata_20250103_154907.mat, 数据形状: (32, 156288)
+2025-05-08 18:10:54,251 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_3_eegdata_20250103_153104.mat, 数据形状: (32, 173760)
+2025-05-08 18:10:54,335 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_3_eegdata_20250103_155241.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:54,415 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_4_eegdata_20250103_153614.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:54,496 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_4_eegdata_20250103_155721.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:54,577 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_5_eegdata_20250103_154031.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:54,658 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_5_eegdata_20250103_160140.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:54,739 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_6_eegdata_20250103_154438.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:54,819 - EEG_Analysis - INFO - 已加载文件: ./data\C\张昊_6_eegdata_20250103_160557.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:54,891 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_1_eegdata_20250102_193757.mat, 数据形状: (32, 156480)
+2025-05-08 18:10:54,965 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_2_eegdata_20250102_194224.mat, 数据形状: (32, 157056)
+2025-05-08 18:10:55,037 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_2_eegdata_20250102_200626.mat, 数据形状: (32, 156288)
+2025-05-08 18:10:55,117 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_3_eegdata_20250102_194637.mat, 数据形状: (32, 173760)
+2025-05-08 18:10:55,198 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_3_eegdata_20250102_201008.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:55,277 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_4_eegdata_20250102_195219.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:55,362 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_4_eegdata_20250102_201518.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:55,446 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_5_eegdata_20250102_195658.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:55,528 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_5_eegdata_20250102_201901.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:55,607 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_6_eegdata_20250102_200130.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:55,689 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智凯_6_eegdata_20250102_202301.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:55,761 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_1_eegdata_20241227_095245.mat, 数据形状: (32, 156096)
+2025-05-08 18:10:55,834 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_2_eegdata_20241227_095716.mat, 数据形状: (32, 156800)
+2025-05-08 18:10:55,907 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_2_eegdata_20241227_102219.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:55,987 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_3_eegdata_20241227_100216.mat, 数据形状: (32, 173696)
+2025-05-08 18:10:56,068 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_3_eegdata_20241227_102607.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:56,148 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_4_eegdata_20241227_100714.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:56,236 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_4_eegdata_20241227_103153.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:56,319 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_5_eegdata_20241227_101240.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:56,402 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_5_eegdata_20241227_103623.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:56,487 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_6_eegdata_20241227_101745.mat, 数据形状: (32, 173056)
+2025-05-08 18:10:56,569 - EEG_Analysis - INFO - 已加载文件: ./data\C\张智杰_6_eegdata_20241227_104026.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:56,642 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_1_eegdata_20250108_150303.mat, 数据形状: (32, 156480)
+2025-05-08 18:10:56,714 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_2_eegdata_20250108_150712.mat, 数据形状: (32, 157120)
+2025-05-08 18:10:56,786 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_2_eegdata_20250108_152944.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:56,867 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_3_eegdata_20250108_151121.mat, 数据形状: (32, 173952)
+2025-05-08 18:10:56,949 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_3_eegdata_20250108_153339.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:57,029 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_4_eegdata_20250108_151615.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:57,109 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_4_eegdata_20250108_153756.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:57,190 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_5_eegdata_20250108_152042.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:57,270 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_5_eegdata_20250108_154237.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:57,350 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_6_eegdata_20250108_152527.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:57,430 - EEG_Analysis - INFO - 已加载文件: ./data\C\张烁_6_eegdata_20250108_154656.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:57,499 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_1_eegdata_20241218_194135.mat, 数据形状: (32, 150208)
+2025-05-08 18:10:57,571 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_2_eegdata_20241218_194522.mat, 数据形状: (32, 150592)
+2025-05-08 18:10:57,647 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_2_eegdata_20241218_201046.mat, 数据形状: (32, 150528)
+2025-05-08 18:10:57,733 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_3_eegdata_20241218_195011.mat, 数据形状: (32, 173696)
+2025-05-08 18:10:57,813 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_3_eegdata_20241218_201431.mat, 数据形状: (32, 173568)
+2025-05-08 18:10:57,894 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_4_eegdata_20241218_195647.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:57,974 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_4_eegdata_20241218_201923.mat, 数据形状: (32, 173184)
+2025-05-08 18:10:58,053 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_5_eegdata_20241218_200144.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:58,134 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_5_eegdata_20241218_202317.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:58,215 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_6_eegdata_20241218_200549.mat, 数据形状: (32, 173120)
+2025-05-08 18:10:58,294 - EEG_Analysis - INFO - 已加载文件: ./data\C\彭博_6_eegdata_20241218_202740.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:58,368 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_1_eegdata_20241226_192105.mat, 数据形状: (32, 156160)
+2025-05-08 18:10:58,441 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_2_eegdata_20241226_192514.mat, 数据形状: (32, 156992)
+2025-05-08 18:10:58,513 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_2_eegdata_20241226_194944.mat, 数据形状: (32, 156608)
+2025-05-08 18:10:58,593 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_3_eegdata_20241226_193003.mat, 数据形状: (32, 173760)
+2025-05-08 18:10:58,673 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_3_eegdata_20241226_195339.mat, 数据形状: (32, 173376)
+2025-05-08 18:10:58,760 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_4_eegdata_20241226_193640.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:58,840 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_4_eegdata_20241226_195850.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:58,921 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_5_eegdata_20241226_194108.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:59,000 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_5_eegdata_20241226_200406.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:59,123 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_6_eegdata_20241226_194524.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:59,206 - EEG_Analysis - INFO - 已加载文件: ./data\C\徐思熠_6_eegdata_20241226_200833.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:59,283 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_1_eegdata_20241224_145148.mat, 数据形状: (32, 156480)
+2025-05-08 18:10:59,357 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_2_eegdata_20241224_145700.mat, 数据形状: (32, 157056)
+2025-05-08 18:10:59,432 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_2_eegdata_20241224_152230.mat, 数据形状: (32, 156544)
+2025-05-08 18:10:59,511 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_3_eegdata_20241224_150118.mat, 数据形状: (32, 173952)
+2025-05-08 18:10:59,592 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_3_eegdata_20241224_152612.mat, 数据形状: (32, 173632)
+2025-05-08 18:10:59,672 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_4_eegdata_20241224_150641.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:59,752 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_4_eegdata_20241224_153121.mat, 数据形状: (32, 173248)
+2025-05-08 18:10:59,860 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_5_eegdata_20241224_151113.mat, 数据形状: (32, 173312)
+2025-05-08 18:10:59,942 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_5_eegdata_20241224_153624.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:00,026 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_6_eegdata_20241224_151627.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:00,107 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾宪程_6_eegdata_20241224_154148.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:00,180 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_1_eegdata_20241226_163952.mat, 数据形状: (32, 156608)
+2025-05-08 18:11:00,253 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_2_eegdata_20241226_164515.mat, 数据形状: (32, 156672)
+2025-05-08 18:11:00,325 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_2_eegdata_20241226_170537.mat, 数据形状: (32, 156608)
+2025-05-08 18:11:00,451 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_3_eegdata_20241226_164848.mat, 数据形状: (32, 173504)
+2025-05-08 18:11:00,533 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_3_eegdata_20241226_170927.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:00,616 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_4_eegdata_20241226_165324.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:00,697 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_4_eegdata_20241226_171332.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:00,779 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_5_eegdata_20241226_165728.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:00,859 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_5_eegdata_20241226_171729.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:00,951 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_6_eegdata_20241226_170120.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:01,033 - EEG_Analysis - INFO - 已加载文件: ./data\C\曾梓烁_6_eegdata_20241226_172126.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:01,106 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_1_eegdata_20241225_095358.mat, 数据形状: (32, 156096)
+2025-05-08 18:11:01,179 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_2_eegdata_20241225_095850.mat, 数据形状: (32, 156864)
+2025-05-08 18:11:01,253 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_2_eegdata_20241225_102256.mat, 数据形状: (32, 156608)
+2025-05-08 18:11:01,335 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_3_eegdata_20241225_100502.mat, 数据形状: (32, 173696)
+2025-05-08 18:11:01,414 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_3_eegdata_20241225_102709.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:01,494 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_4_eegdata_20241225_100937.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:01,574 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_4_eegdata_20241225_103117.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:01,656 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_5_eegdata_20241225_101349.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:01,739 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_5_eegdata_20241225_103512.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:01,820 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_6_eegdata_20241225_101753.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:01,908 - EEG_Analysis - INFO - 已加载文件: ./data\C\朱乐妍_6_eegdata_20241225_103920.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:01,977 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_1_eegdata_20241126_162305.mat, 数据形状: (32, 150016)
+2025-05-08 18:11:02,054 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_2_eegdata_20241126_162644.mat, 数据形状: (32, 150912)
+2025-05-08 18:11:02,129 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_2_eegdata_20241126_164402.mat, 数据形状: (32, 150528)
+2025-05-08 18:11:02,210 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_3_eegdata_20241126_163116.mat, 数据形状: (32, 172992)
+2025-05-08 18:11:02,298 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_3_eegdata_20241126_164811.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:02,380 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_4_eegdata_20241126_163518.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:02,462 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_4_eegdata_20241126_165221.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:02,542 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_5_eegdata_20241126_163922.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:02,622 - EEG_Analysis - INFO - 已加载文件: ./data\C\李轩昊_5_eegdata_20241126_165712.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:02,656 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_1_eegdata_20241113_192047.mat, 数据形状: (32, 72320)
+2025-05-08 18:11:02,691 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_2_eegdata_20241113_192315.mat, 数据形状: (32, 73024)
+2025-05-08 18:11:02,726 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_2_eegdata_20241113_194038.mat, 数据形状: (32, 72512)
+2025-05-08 18:11:02,805 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_3_eegdata_20241113_192721.mat, 数据形状: (32, 170240)
+2025-05-08 18:11:02,886 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_3_eegdata_20241113_194409.mat, 数据形状: (32, 170240)
+2025-05-08 18:11:02,966 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_4_eegdata_20241113_193155.mat, 数据形状: (32, 170304)
+2025-05-08 18:11:03,045 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_4_eegdata_20241113_194850.mat, 数据形状: (32, 170304)
+2025-05-08 18:11:03,124 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_5_eegdata_20241113_193613.mat, 数据形状: (32, 170112)
+2025-05-08 18:11:03,218 - EEG_Analysis - INFO - 已加载文件: ./data\C\林春霞_5_eegdata_20241113_195301.mat, 数据形状: (32, 170304)
+2025-05-08 18:11:03,290 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_1_eegdata_20241225_162159.mat, 数据形状: (32, 155968)
+2025-05-08 18:11:03,362 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_2_eegdata_20241225_162612.mat, 数据形状: (32, 156288)
+2025-05-08 18:11:03,434 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_2_eegdata_20241225_164850.mat, 数据形状: (32, 156608)
+2025-05-08 18:11:03,515 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_3_eegdata_20241225_163009.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:03,597 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_3_eegdata_20241225_165245.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:03,679 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_4_eegdata_20241225_163511.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:03,761 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_4_eegdata_20241225_165756.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:03,841 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_5_eegdata_20241225_163907.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:03,922 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_5_eegdata_20241225_170213.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:04,002 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_6_eegdata_20241225_164341.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:04,084 - EEG_Analysis - INFO - 已加载文件: ./data\C\梁荣煜_6_eegdata_20241225_170620.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:04,158 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_1_eegdata_20241227_145228.mat, 数据形状: (32, 156096)
+2025-05-08 18:11:04,230 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_2_eegdata_20241227_145738.mat, 数据形状: (32, 156800)
+2025-05-08 18:11:04,308 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_2_eegdata_20241227_152109.mat, 数据形状: (32, 156608)
+2025-05-08 18:11:04,392 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_3_eegdata_20241227_150136.mat, 数据形状: (32, 173760)
+2025-05-08 18:11:04,473 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_3_eegdata_20241227_152452.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:04,554 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_4_eegdata_20241227_150755.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:04,635 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_4_eegdata_20241227_152927.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:04,716 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_5_eegdata_20241227_151223.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:04,797 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_5_eegdata_20241227_153401.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:04,877 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_6_eegdata_20241227_151641.mat, 数据形状: (32, 173056)
+2025-05-08 18:11:04,956 - EEG_Analysis - INFO - 已加载文件: ./data\C\温琪莹_6_eegdata_20241227_153807.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:05,025 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_1_eegdata_20241218_153902.mat, 数据形状: (32, 150336)
+2025-05-08 18:11:05,059 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_1_eegdata_20241218_154108.mat, 数据形状: (32, 71872)
+2025-05-08 18:11:05,131 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_2_eegdata_20241218_154521.mat, 数据形状: (32, 151104)
+2025-05-08 18:11:05,202 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_2_eegdata_20241218_160555.mat, 数据形状: (32, 150528)
+2025-05-08 18:11:05,286 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_3_eegdata_20241218_154903.mat, 数据形状: (32, 173888)
+2025-05-08 18:11:05,371 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_3_eegdata_20241218_160928.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:05,458 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_4_eegdata_20241218_155338.mat, 数据形状: (32, 173056)
+2025-05-08 18:11:05,542 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_4_eegdata_20241218_161417.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:05,624 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_5_eegdata_20241218_155745.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:05,706 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_5_eegdata_20241218_161828.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:05,788 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_6_eegdata_20241218_160150.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:05,869 - EEG_Analysis - INFO - 已加载文件: ./data\C\石欢欢_6_eegdata_20241218_162232.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:05,940 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_1_eegdata_20241226_150224.mat, 数据形状: (32, 156160)
+2025-05-08 18:11:06,013 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_2_eegdata_20241226_150812.mat, 数据形状: (32, 156992)
+2025-05-08 18:11:06,087 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_2_eegdata_20241226_153148.mat, 数据形状: (32, 156608)
+2025-05-08 18:11:06,170 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_3_eegdata_20241226_151226.mat, 数据形状: (32, 173824)
+2025-05-08 18:11:06,250 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_3_eegdata_20241226_153522.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:06,334 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_4_eegdata_20241226_151714.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:06,413 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_4_eegdata_20241226_154021.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:06,495 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_5_eegdata_20241226_152118.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:06,587 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_5_eegdata_20241226_154433.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:06,667 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_6_eegdata_20241226_152626.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:06,749 - EEG_Analysis - INFO - 已加载文件: ./data\C\连翠凡_6_eegdata_20241226_154810.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:06,821 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_1_eegdata_20250109_095230.mat, 数据形状: (32, 156480)
+2025-05-08 18:11:06,896 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_2_eegdata_20250109_095630.mat, 数据形状: (32, 157120)
+2025-05-08 18:11:06,973 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_2_eegdata_20250109_101926.mat, 数据形状: (32, 156544)
+2025-05-08 18:11:07,054 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_3_eegdata_20250109_100056.mat, 数据形状: (32, 173888)
+2025-05-08 18:11:07,135 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_3_eegdata_20250109_102251.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:07,215 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_4_eegdata_20250109_100608.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:07,298 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_4_eegdata_20250109_102729.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:07,378 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_5_eegdata_20250109_101054.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:07,460 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_5_eegdata_20250109_103133.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:07,541 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_6_eegdata_20250109_101448.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:07,627 - EEG_Analysis - INFO - 已加载文件: ./data\C\郑泽豪_6_eegdata_20250109_103549.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:07,701 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_1_eegdata_20241119_192755.mat, 数据形状: (32, 150016)
+2025-05-08 18:11:07,773 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_2_eegdata_20241119_193249.mat, 数据形状: (32, 151232)
+2025-05-08 18:11:07,842 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_2_eegdata_20241119_195202.mat, 数据形状: (32, 150272)
+2025-05-08 18:11:07,922 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_3_eegdata_20241119_193723.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:08,003 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_3_eegdata_20241119_195605.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:08,085 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_4_eegdata_20241119_194139.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:08,165 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_4_eegdata_20241119_200016.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:08,254 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_5_eegdata_20241119_194626.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:08,337 - EEG_Analysis - INFO - 已加载文件: ./data\C\郭学_5_eegdata_20241119_200430.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:08,372 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_1_eegdata_20241112_144423.mat, 数据形状: (32, 72320)
+2025-05-08 18:11:08,409 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_2_eegdata_20241112_144816.mat, 数据形状: (32, 75008)
+2025-05-08 18:11:08,443 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_2_eegdata_20241112_151115.mat, 数据形状: (32, 72832)
+2025-05-08 18:11:08,526 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_3_eegdata_20241112_145916.mat, 数据形状: (32, 170240)
+2025-05-08 18:11:08,608 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_3_eegdata_20241112_151540.mat, 数据形状: (32, 171456)
+2025-05-08 18:11:08,687 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_4_eegdata_20241112_150329.mat, 数据形状: (32, 170304)
+2025-05-08 18:11:08,778 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_4_eegdata_20241112_151957.mat, 数据形状: (32, 171200)
+2025-05-08 18:11:08,857 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_5_eegdata_20241112_150803.mat, 数据形状: (32, 170304)
+2025-05-08 18:11:08,939 - EEG_Analysis - INFO - 已加载文件: ./data\C\钟茹玉_5_eegdata_20241112_152412.mat, 数据形状: (32, 171520)
+2025-05-08 18:11:09,013 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_1_eegdata_20241225_192718.mat, 数据形状: (32, 156608)
+2025-05-08 18:11:09,086 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_2_eegdata_20241225_193219.mat, 数据形状: (32, 156672)
+2025-05-08 18:11:09,159 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_2_eegdata_20241225_195351.mat, 数据形状: (32, 156544)
+2025-05-08 18:11:09,240 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_3_eegdata_20241225_193616.mat, 数据形状: (32, 173760)
+2025-05-08 18:11:09,322 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_3_eegdata_20241225_195753.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:09,401 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_4_eegdata_20241225_194040.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:09,481 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_4_eegdata_20241225_200257.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:09,562 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_5_eegdata_20241225_194443.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:09,641 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_5_eegdata_20241225_200715.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:09,722 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_6_eegdata_20241225_194911.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:09,806 - EEG_Analysis - INFO - 已加载文件: ./data\C\陈俊龙_6_eegdata_20241225_201135.mat, 数据形状: (32, 173056)
+2025-05-08 18:11:09,878 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_1_eegdata_20241128_191614.mat, 数据形状: (32, 150016)
+2025-05-08 18:11:09,951 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_2_eegdata_20241128_192025.mat, 数据形状: (32, 151168)
+2025-05-08 18:11:10,023 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_2_eegdata_20241128_194251.mat, 数据形状: (32, 150272)
+2025-05-08 18:11:10,106 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_3_eegdata_20241128_193017.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:10,187 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_3_eegdata_20241128_195058.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:10,267 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_4_eegdata_20241128_193434.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:10,349 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_4_eegdata_20241128_195453.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:10,429 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_5_eegdata_20241128_193827.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:10,511 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_5_eegdata_20241128_195908.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:10,593 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_A2_eegdata_20241128_194643.mat, 数据形状: (32, 173824)
+2025-05-08 18:11:10,674 - EEG_Analysis - INFO - 已加载文件: ./data\C\韩佳仪_A_eegdata_20241128_192500.mat, 数据形状: (32, 174016)
+2025-05-08 18:11:10,744 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_1_eegdata_20241128_100255.mat, 数据形状: (32, 149952)
+2025-05-08 18:11:10,814 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_1_eegdata_20241128_102535.mat, 数据形状: (32, 149760)
+2025-05-08 18:11:10,883 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_2_eegdata_20241128_100759.mat, 数据形状: (32, 151296)
+2025-05-08 18:11:10,960 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_2_eegdata_20241128_102843.mat, 数据形状: (32, 150528)
+2025-05-08 18:11:11,043 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_3_eegdata_20241128_101249.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:11,123 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_3_eegdata_20241128_103255.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:11,204 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_4_eegdata_20241128_101659.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:11,288 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_4_eegdata_20241128_103716.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:11,373 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_5_eegdata_20241128_102109.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:11,454 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄楚翘_5_eegdata_20241128_104118.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:11,526 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_1_eegdata_20250103_095648.mat, 数据形状: (32, 156032)
+2025-05-08 18:11:11,600 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_2_eegdata_20250103_100017.mat, 数据形状: (32, 156800)
+2025-05-08 18:11:11,673 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_2_eegdata_20250103_102326.mat, 数据形状: (32, 156608)
+2025-05-08 18:11:11,753 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_3_eegdata_20250103_100519.mat, 数据形状: (32, 173696)
+2025-05-08 18:11:11,836 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_3_eegdata_20250103_102725.mat, 数据形状: (32, 173632)
+2025-05-08 18:11:11,917 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_4_eegdata_20250103_101020.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:11,997 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_4_eegdata_20250103_103213.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:12,080 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_5_eegdata_20250103_101511.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:12,164 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_5_eegdata_20250103_103645.mat, 数据形状: (32, 173248)
+2025-05-08 18:11:12,246 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_6_eegdata_20250103_101909.mat, 数据形状: (32, 173120)
+2025-05-08 18:11:12,329 - EEG_Analysis - INFO - 已加载文件: ./data\C\黄雅宇_6_eegdata_20250103_104051.mat, 数据形状: (32, 173312)
+2025-05-08 18:11:12,329 - EEG_Analysis - INFO - 成功加载C组265个受试者的数据
+2025-05-08 18:11:12,329 - EEG_Analysis - INFO - load_data阶段完成，耗时: 20.85秒
+2025-05-08 18:12:24,125 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\load_data_C.pkl
+2025-05-08 18:12:24,154 - EEG_Analysis - INFO - 总共加载了477个受试者的数据
+2025-05-08 18:12:24,165 - EEG_Analysis - INFO - load_all_data阶段完成，耗时: 112.62秒
+2025-05-08 18:14:02,396 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\load_all_data.pkl
+2025-05-08 18:14:02,404 - EEG_Analysis - INFO - 共加载477个受试者的数据
+2025-05-08 18:14:02,405 - EEG_Analysis - INFO - 游戏成瘾组: 212个受试者
+2025-05-08 18:14:02,405 - EEG_Analysis - INFO - 对照组: 265个受试者
+2025-05-08 18:14:02,406 - EEG_Analysis - INFO - 第2步：预处理...
+2025-05-08 18:14:02,413 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\preprocess_all.pkl
+2025-05-08 18:14:02,414 - EEG_Analysis - INFO - 开始执行preprocess_all阶段...
+2025-05-08 18:14:02,414 - EEG_Analysis - INFO - 开始预处理所有EEG数据...
+2025-05-08 18:14:02,415 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\preprocess_group.pkl
+2025-05-08 18:14:02,416 - EEG_Analysis - INFO - 开始执行preprocess_group阶段...
+2025-05-08 18:14:02,416 - EEG_Analysis - INFO - 开始预处理A组的EEG数据...
+2025-05-08 18:14:02,418 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:02,418 - EEG_Analysis - INFO - 开始执行preprocess阶段...
+2025-05-08 18:14:02,418 - EEG_Analysis - INFO - 开始预处理受试者A_刘乐平_1_eegdata_20241111_192855的EEG数据...
+2025-05-08 18:14:03,018 - EEG_Analysis - WARNING - 设置电极布局失败: DigMontage is only a subset of info. There are 32 channel positions not present in the DigMontage. The channels missing from the montage are:
+
+['EEG001', 'EEG002', 'EEG003', 'EEG004', 'EEG005', 'EEG006', 'EEG007', 'EEG008', 'EEG009', 'EEG010', 'EEG011', 'EEG012', 'EEG013', 'EEG014', 'EEG015', 'EEG016', 'EEG017', 'EEG018', 'EEG019', 'EEG020', 'EEG021', 'EEG022', 'EEG023', 'EEG024', 'EEG025', 'EEG026', 'EEG027', 'EEG028', 'EEG029', 'EEG030', 'EEG031', 'EEG032'].
+
+Consider using inst.rename_channels to match the montage nomenclature, or inst.set_channel_types if these are not EEG channels, or use the on_missing parameter if the channel positions are allowed to be unknown in your analyses.
+2025-05-08 18:14:03,018 - EEG_Analysis - INFO - 函数 create_mne_raw 执行耗时: 0.60秒
+2025-05-08 18:14:03,308 - EEG_Analysis - INFO - 函数 filter_raw 执行耗时: 0.29秒
+2025-05-08 18:14:03,412 - EEG_Analysis - INFO - 函数 downsample_raw 执行耗时: 0.10秒
+2025-05-08 18:14:03,609 - EEG_Analysis - WARNING - 自动眼动检测失败: No EOG channel(s) found
+2025-05-08 18:14:03,618 - EEG_Analysis - INFO - 函数 remove_artifacts_ica 执行耗时: 0.21秒
+2025-05-08 18:14:03,618 - EEG_Analysis - INFO - 受试者A_刘乐平_1_eegdata_20241111_192855的EEG数据预处理完成
+2025-05-08 18:14:03,620 - EEG_Analysis - INFO - preprocess阶段完成，耗时: 1.20秒
+2025-05-08 18:14:03,640 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,649 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,649 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,656 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,656 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,662 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,662 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,667 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,667 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,673 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,673 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,679 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,679 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,684 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,684 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,690 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,691 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,696 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,696 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,702 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,702 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,708 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,708 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,714 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,714 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,720 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,720 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,725 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,725 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,731 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,731 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,738 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,738 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,744 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,744 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,750 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,750 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,756 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,756 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,762 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,762 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,768 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,768 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,773 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,773 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,779 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,779 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,786 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,786 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,792 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,792 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,798 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,798 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,804 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,804 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,811 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,811 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,818 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,818 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,824 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,825 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,832 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,832 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,838 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,839 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,847 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,847 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,853 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,853 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,860 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,861 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,867 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,867 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,873 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,873 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,880 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,880 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,886 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,886 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,893 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,894 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,899 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,900 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,907 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,907 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,914 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,914 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,920 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,920 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,926 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,926 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,932 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,932 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,938 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,938 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,944 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,944 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,950 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,950 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,956 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,956 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,963 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,963 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,970 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,970 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,975 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,976 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,981 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,982 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,988 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,988 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:03,994 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:03,994 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,000 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,000 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,006 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,006 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,013 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,013 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,020 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,020 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,027 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,027 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,034 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,034 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,040 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,040 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,051 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,051 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,057 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,058 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,066 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,066 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,074 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,074 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,082 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,082 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,090 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,090 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,099 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,099 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,107 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,107 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,114 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,114 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,121 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,122 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,128 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,129 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,135 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,135 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,142 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,142 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,148 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,148 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,155 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,155 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,162 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,162 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,168 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,168 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,175 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,175 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,181 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,182 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,188 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,188 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,194 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,195 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,201 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,201 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,207 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,207 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,213 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,214 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,220 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,220 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,226 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,226 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,233 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,233 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,240 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,240 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,248 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,248 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,254 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,254 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,261 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,261 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,268 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,268 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,276 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,276 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,284 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,284 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,290 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,290 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,297 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,297 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,304 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,304 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,312 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,313 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,319 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,319 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,326 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,326 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,333 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,334 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,340 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,340 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,346 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,347 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,353 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,353 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,358 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,359 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,366 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,366 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,372 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,373 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,379 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,379 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,385 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,385 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,392 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,392 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,398 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,398 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,403 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,403 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,409 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,410 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,416 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,416 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,423 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,423 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,429 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,429 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,435 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,435 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,443 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,443 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,450 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,450 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,456 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,456 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,462 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,463 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,470 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,470 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,477 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,477 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,484 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,484 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,490 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,490 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,498 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,498 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,505 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,505 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,512 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,512 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,520 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,520 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,527 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,527 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,534 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,534 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,540 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,540 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,548 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,548 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,555 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,555 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,562 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,562 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,568 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,568 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,574 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,574 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,580 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,580 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,586 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,586 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,592 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,593 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,598 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,599 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,604 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,604 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,610 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,611 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,616 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,617 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,623 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,624 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,630 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,630 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,636 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,636 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,643 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,644 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,650 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,650 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,658 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,658 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,666 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,666 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,673 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,673 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,680 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,680 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,688 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,688 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,695 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,695 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,702 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,702 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,708 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,708 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,724 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,724 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,731 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,731 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,738 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,738 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,744 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,744 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,751 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,751 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,757 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,757 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,763 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,763 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,769 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,769 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,774 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,774 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,780 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,780 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,785 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,785 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,790 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,790 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,796 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,797 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,803 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,803 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,809 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,809 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,815 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,815 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,820 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,820 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,827 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,827 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,833 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,833 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,839 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,839 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,845 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,846 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,852 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,852 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,859 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,859 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,867 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,867 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,873 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,873 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,880 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,880 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,886 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,886 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,893 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,893 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,899 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,899 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,906 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,906 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,913 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,913 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,919 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,920 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,925 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,925 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,932 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,932 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,939 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,939 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,946 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,946 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,951 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,952 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,958 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,958 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,964 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,964 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,970 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,970 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,976 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,976 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,982 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,982 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,988 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,988 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:04,994 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:04,994 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:05,000 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:05,000 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:05,006 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:05,006 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:05,011 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:05,011 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:05,018 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:05,018 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:05,024 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:05,024 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:05,030 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:05,031 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:05,036 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_A.pkl
+2025-05-08 18:14:05,037 - EEG_Analysis - INFO - 已从检查点加载preprocess阶段结果
+2025-05-08 18:14:05,037 - EEG_Analysis - INFO - A组的EEG数据预处理完成，共212个受试者
+2025-05-08 18:14:05,037 - EEG_Analysis - INFO - preprocess_group阶段完成，耗时: 2.62秒
+2025-05-08 18:14:25,247 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\preprocess_group.pkl
+2025-05-08 18:14:28,834 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\preprocess_group.pkl
+2025-05-08 18:14:28,834 - EEG_Analysis - INFO - 已从检查点加载preprocess_group阶段结果
+2025-05-08 18:14:28,834 - EEG_Analysis - INFO - 所有EEG数据预处理完成
+2025-05-08 18:14:28,834 - EEG_Analysis - INFO - preprocess_all阶段完成，耗时: 26.42秒
+2025-05-08 18:16:14,875 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\preprocess_all.pkl
+2025-05-08 18:16:14,881 - EEG_Analysis - INFO - 第3步：特征提取...
+2025-05-08 18:16:14,884 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\extract_all_features.pkl
+2025-05-08 18:16:14,884 - EEG_Analysis - INFO - 开始执行extract_all_features阶段...
+2025-05-08 18:16:14,885 - EEG_Analysis - INFO - 开始提取所有受试者的特征...
+2025-05-08 18:16:14,886 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\extract_group_features.pkl
+2025-05-08 18:16:14,886 - EEG_Analysis - INFO - 开始执行extract_group_features阶段...
+2025-05-08 18:16:14,886 - EEG_Analysis - INFO - 开始提取A组的特征...
+2025-05-08 18:16:14,888 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:14,888 - EEG_Analysis - INFO - 开始执行extract_features阶段...
+2025-05-08 18:16:14,888 - EEG_Analysis - INFO - 开始提取受试者A_刘乐平_1_eegdata_20241111_192855的特征...
+2025-05-08 18:16:14,996 - EEG_Analysis - INFO - 函数 extract_time_domain_features 执行耗时: 0.10秒
+2025-05-08 18:16:15,047 - EEG_Analysis - INFO - 函数 extract_frequency_domain_features 执行耗时: 0.05秒
+2025-05-08 18:16:15,123 - EEG_Analysis - INFO - 函数 extract_connectivity_features 执行耗时: 0.08秒
+2025-05-08 18:16:15,124 - EEG_Analysis - INFO - 受试者A_刘乐平_1_eegdata_20241111_192855的特征提取完成
+2025-05-08 18:16:15,124 - EEG_Analysis - INFO - extract_features阶段完成，耗时: 0.24秒
+2025-05-08 18:16:15,126 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,128 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,128 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,128 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,128 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,129 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,129 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,129 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,129 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,130 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,130 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,130 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,130 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,131 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,131 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,131 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,131 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,132 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,132 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,132 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,132 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,132 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,132 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,133 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,133 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,134 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,134 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,134 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,134 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,135 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,135 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,135 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,135 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,135 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,135 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,136 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,136 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,136 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,136 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,137 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,137 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,137 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,137 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,137 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,137 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,138 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,138 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,138 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,138 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,139 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,139 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,139 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,139 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,139 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,139 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,140 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,140 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,140 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,140 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,140 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,140 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,141 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,141 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,141 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,141 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,141 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,142 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,142 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,142 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,143 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,143 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,143 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,143 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,144 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,144 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,144 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,144 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,144 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,144 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,145 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,145 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,145 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,145 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,145 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,146 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,146 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,146 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,146 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,146 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,147 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,147 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,148 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,148 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,148 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,148 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,148 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,148 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,149 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,149 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,149 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,149 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,149 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,149 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,150 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,150 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,150 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,150 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,151 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,151 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,151 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,152 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,152 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,152 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,153 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,153 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,153 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,153 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,154 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,154 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,154 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,154 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,154 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,155 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,155 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,155 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,155 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,155 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,156 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,156 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,156 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,156 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,156 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,156 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,157 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,157 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,158 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,158 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,159 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,159 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,159 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,159 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,160 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,160 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,160 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,160 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,160 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,160 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,161 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,161 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,161 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,161 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,161 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,162 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,162 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,162 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,162 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,162 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,163 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,163 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,163 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,163 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,163 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,163 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,164 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,164 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,164 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,164 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,165 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,165 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,165 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,165 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,165 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,165 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,166 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,166 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,166 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,166 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,166 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,167 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,167 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,167 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,167 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,167 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,167 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,167 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,168 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,168 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,168 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,168 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,168 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,168 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,169 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,169 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,169 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,169 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,169 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,170 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,170 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,171 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,171 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,172 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,172 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,172 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,172 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,172 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,173 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,173 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,173 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,173 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,174 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,174 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,175 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,175 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,175 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,175 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,175 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,175 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,176 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,176 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,176 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,176 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,176 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,177 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,177 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,177 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,177 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,177 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,178 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,178 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,178 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,178 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,178 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,178 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,179 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,179 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,179 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,179 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,179 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,179 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,180 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,180 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,180 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,180 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,180 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,181 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,181 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,181 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,181 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,181 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,181 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,182 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,182 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,182 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,182 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,182 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,183 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,183 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,183 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,183 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,183 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,183 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,184 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,184 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,184 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,184 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,184 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,185 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,185 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,185 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,185 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,185 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,185 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,186 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,186 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,186 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,186 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,186 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,187 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,187 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,187 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,187 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,188 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,188 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,188 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,188 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,189 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,189 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,189 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,189 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,200 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,200 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,201 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,201 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,201 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,201 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,201 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,201 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,202 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,202 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,202 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,202 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,203 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,203 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,203 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,203 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,203 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,204 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,204 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,204 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,204 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,204 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,204 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,205 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,205 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,205 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,206 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,206 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,206 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,206 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,206 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,206 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,207 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,207 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,207 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,207 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,207 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,207 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,208 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,208 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,208 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,208 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,208 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,208 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,209 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,209 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,209 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,209 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,209 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,209 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,210 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,212 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,213 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,213 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,213 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,213 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,213 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,213 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,214 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,214 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,214 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,214 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,214 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,214 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,215 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,215 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,215 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,215 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,215 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,215 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,216 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,216 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,216 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,216 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,216 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,216 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,217 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,217 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,217 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,217 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,217 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,217 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,218 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,218 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,218 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,218 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,218 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,218 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,219 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,219 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,219 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,219 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,219 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,219 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,220 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,220 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,220 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,220 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,220 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,221 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,221 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,221 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,221 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,221 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,222 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,222 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,222 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,222 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,222 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,222 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,223 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_features_A.pkl
+2025-05-08 18:16:15,223 - EEG_Analysis - INFO - 已从检查点加载extract_features阶段结果
+2025-05-08 18:16:15,223 - EEG_Analysis - INFO - A组的特征提取完成，共212个受试者
+2025-05-08 18:16:15,223 - EEG_Analysis - INFO - extract_group_features阶段完成，耗时: 0.34秒
+2025-05-08 18:16:15,259 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\extract_group_features.pkl
+2025-05-08 18:16:15,276 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\extract_group_features.pkl
+2025-05-08 18:16:15,276 - EEG_Analysis - INFO - 已从检查点加载extract_group_features阶段结果
+2025-05-08 18:16:15,276 - EEG_Analysis - INFO - 所有受试者的特征提取完成
+2025-05-08 18:16:15,276 - EEG_Analysis - INFO - extract_all_features阶段完成，耗时: 0.39秒
+2025-05-08 18:16:15,309 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\extract_all_features.pkl
+2025-05-08 18:16:15,310 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\prepare_all_tvar_data.pkl
+2025-05-08 18:16:15,310 - EEG_Analysis - INFO - 开始执行prepare_all_tvar_data阶段...
+2025-05-08 18:16:15,310 - EEG_Analysis - INFO - 开始准备所有受试者的TVAR数据...
+2025-05-08 18:16:15,310 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\prepare_group_tvar_data.pkl
+2025-05-08 18:16:15,310 - EEG_Analysis - INFO - 开始执行prepare_group_tvar_data阶段...
+2025-05-08 18:16:15,310 - EEG_Analysis - INFO - 开始准备A组的TVAR数据...
+2025-05-08 18:16:15,311 - EEG_Analysis - INFO - 检查点文件不存在: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:15,311 - EEG_Analysis - INFO - 开始执行prepare_tvar_data阶段...
+2025-05-08 18:16:15,311 - EEG_Analysis - INFO - 准备受试者A_刘乐平_1_eegdata_20241111_192855的TVAR数据...
+2025-05-08 18:16:15,375 - EEG_Analysis - INFO - 函数 prepare_features_for_tvar 执行耗时: 0.00秒
+2025-05-08 18:16:15,398 - EEG_Analysis - INFO - 函数 prepare_features_for_tvar 执行耗时: 0.00秒
+2025-05-08 18:16:15,420 - EEG_Analysis - INFO - 函数 prepare_features_for_tvar 执行耗时: 0.00秒
+2025-05-08 18:16:15,439 - EEG_Analysis - INFO - 函数 prepare_features_for_tvar 执行耗时: 0.00秒
+2025-05-08 18:16:15,459 - EEG_Analysis - INFO - 函数 prepare_features_for_tvar 执行耗时: 0.00秒
+2025-05-08 18:16:15,459 - EEG_Analysis - INFO - 受试者A_刘乐平_1_eegdata_20241111_192855的TVAR数据准备完成
+2025-05-08 18:16:15,461 - EEG_Analysis - INFO - prepare_tvar_data阶段完成，耗时: 0.15秒
+2025-05-08 18:16:15,616 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:15,705 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:15,705 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:15,791 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:15,791 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:15,875 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:15,876 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:15,956 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:15,956 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:16,040 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:16,040 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:16,123 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:16,123 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:16,205 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:16,206 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:16,284 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:16,285 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:16,369 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:16,370 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:16,452 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:16,452 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:16,597 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:16,597 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:16,810 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:16,810 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,033 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,033 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,201 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,202 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,287 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,287 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,374 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,374 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,461 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,461 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,554 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,554 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,640 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,640 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,726 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,726 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,815 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,815 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,898 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,898 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:17,979 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:17,979 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,063 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,063 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,146 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,146 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,228 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,228 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,315 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,316 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,399 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,399 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,480 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,480 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,563 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,563 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,649 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,649 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,731 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,731 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,827 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,827 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,913 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,913 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:18,996 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:18,997 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,084 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,085 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,168 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,168 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,250 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,250 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,339 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,339 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,424 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,424 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,507 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,507 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,597 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,597 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,682 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,682 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,765 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,765 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,854 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,854 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:19,945 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:19,945 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,028 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,028 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,114 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,114 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,198 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,198 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,282 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,282 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,381 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,381 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,472 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,472 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,561 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,561 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,652 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,652 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,737 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,737 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,822 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,822 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:20,911 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:20,911 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,007 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,007 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,095 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,095 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,182 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,182 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,268 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,268 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,354 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,354 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,443 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,443 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,539 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,540 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,627 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,627 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,718 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,719 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,805 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,805 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,892 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,892 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:21,985 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:21,985 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,082 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,082 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,172 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,172 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,266 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,266 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,353 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,354 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,443 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,443 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,541 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,541 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,631 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,631 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,732 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,732 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,834 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,834 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:22,925 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:22,925 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,018 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,018 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,112 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,112 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,210 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,210 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,311 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,311 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,413 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,413 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,510 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,510 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,607 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,607 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,702 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,702 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,795 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,795 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,885 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,885 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:23,979 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:23,979 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:24,070 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:24,071 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:24,165 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:24,165 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:24,268 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:24,269 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:24,367 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:24,367 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:24,461 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:24,462 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:24,558 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:24,558 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:24,654 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:24,694 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:24,841 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:24,842 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:25,062 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:25,062 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:25,279 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:25,280 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:25,515 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:25,515 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:26,848 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:26,852 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:27,441 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:27,442 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:28,047 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:28,047 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:28,251 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:28,251 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:28,455 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:28,455 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:28,557 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:28,557 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:28,774 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:28,774 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:28,978 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:28,978 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:29,182 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:29,182 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:29,286 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:29,286 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:29,504 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:29,504 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:29,715 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:29,716 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:29,927 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:29,927 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:30,130 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:30,131 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:30,438 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:30,438 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:30,642 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:30,643 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:30,853 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:30,854 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:31,864 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:31,864 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:31,960 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:31,960 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:32,065 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:32,065 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:33,358 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:33,358 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:33,653 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:33,653 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:33,977 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:33,977 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:34,428 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:34,428 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:34,536 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:34,537 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:34,652 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:34,652 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:34,855 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:34,855 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:35,045 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:35,045 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:35,270 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:35,270 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:35,501 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:35,501 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:35,829 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:35,829 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:35,950 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:35,950 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:36,160 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:36,160 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:36,466 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:36,466 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:36,700 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:36,701 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:36,839 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:36,839 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:37,008 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:37,008 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:37,146 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:37,146 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:37,321 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:37,321 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:37,573 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:37,573 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:37,703 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:37,703 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:37,853 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:37,853 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:38,013 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:38,013 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:38,172 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:38,172 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:38,328 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:38,328 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:38,643 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:38,643 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:38,809 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:38,809 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:38,980 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:38,980 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:39,132 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:39,132 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:39,326 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:39,326 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:39,514 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:39,514 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:39,773 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:39,773 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:39,888 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:39,888 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:40,142 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:40,142 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:40,478 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:40,478 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:40,859 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:40,859 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:41,062 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:41,062 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:41,387 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:41,387 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:41,673 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:41,673 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:41,861 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:41,861 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:42,054 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:42,054 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:42,213 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:42,214 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:42,489 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:42,489 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:42,655 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:42,655 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:42,835 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:42,835 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:43,129 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:43,129 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:43,455 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:43,455 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:43,696 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:43,696 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:43,954 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:43,954 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:44,196 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:44,196 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:44,501 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:44,501 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:44,756 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:44,756 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:44,914 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:44,915 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:45,074 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:45,074 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:45,226 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:45,228 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:45,425 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:45,426 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:45,773 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:45,773 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:46,182 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:46,182 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:46,575 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:46,575 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:46,961 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:46,961 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:16:47,411 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:16:47,411 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:05,448 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:05,448 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:07,121 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:07,122 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:07,247 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:07,247 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:07,375 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:07,375 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:07,499 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:07,499 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:07,718 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:07,719 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:07,978 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:07,978 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:08,297 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:08,297 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:33,785 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:33,785 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:43,244 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:43,244 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:43,422 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:43,422 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:43,555 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:43,555 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:43,683 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:43,683 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:43,868 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:43,868 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:44,025 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:44,025 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:44,182 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:44,182 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:44,321 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:44,322 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:44,475 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:44,475 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:44,713 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:44,713 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:44,868 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:44,868 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:45,147 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:45,147 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:46,481 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:46,481 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:46,616 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:46,616 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:46,749 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:46,749 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:46,917 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:46,918 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:47,246 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:47,246 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:47,505 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:47,505 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:47,645 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:47,646 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:47,804 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_tvar_data_A.pkl
+2025-05-08 18:17:47,805 - EEG_Analysis - INFO - 已从检查点加载prepare_tvar_data阶段结果
+2025-05-08 18:17:47,806 - EEG_Analysis - INFO - A组的TVAR数据准备完成，共212个受试者
+2025-05-08 18:17:47,809 - EEG_Analysis - INFO - prepare_group_tvar_data阶段完成，耗时: 92.50秒
+2025-05-08 18:36:42,315 - EEG_Analysis - INFO - 检查点已保存到: ./checkpoints\prepare_group_tvar_data.pkl
+2025-05-08 18:42:07,506 - EEG_Analysis - INFO - 检查点已加载: ./checkpoints\prepare_group_tvar_data.pkl
+2025-05-08 18:42:07,555 - EEG_Analysis - INFO - 已从检查点加载prepare_group_tvar_data阶段结果
+2025-05-08 18:42:07,557 - EEG_Analysis - INFO - 所有受试者的TVAR数据准备完成
+2025-05-08 18:42:07,558 - EEG_Analysis - INFO - prepare_all_tvar_data阶段完成，耗时: 1552.25秒
